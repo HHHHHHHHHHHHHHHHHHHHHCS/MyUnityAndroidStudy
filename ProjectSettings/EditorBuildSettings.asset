@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TrailTest.unity
+    guid: 3e37b9e7e57e7ae4a9d9ed1a66decefb
+  - enabled: 1
     path: Assets/Scenes/TouchTest.unity
     guid: cf6f42d415dbb1c4887a09465b711fe8
   - enabled: 1

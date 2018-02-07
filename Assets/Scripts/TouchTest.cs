@@ -7,6 +7,12 @@ public class TouchTest : MonoBehaviour
 {
     public Text infoText;
 
+    private void Awake()
+    {
+        //点击返回键，是否退出游戏 ，默认为false
+        //Input.backButtonLeavesApp = true;
+    }
+
     private void Update()
     {
         string info = "";

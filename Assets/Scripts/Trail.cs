@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Trail : MonoBehaviour
 {
     public GameObject trailPrefab;
+    public Text text;
     private Transform markTS;
 
 
     private void Update()
     {
-
         if (Input.touchCount > 0)
         {
             Touch t0 = Input.touches[0];
@@ -36,12 +37,37 @@ public class Trail : MonoBehaviour
                     break;
                 //当手指离开屏幕的时候
                 case TouchPhase.Ended:
-                    Destroy(markTS.gameObject);
-                    break;
+                    {
+                        Vector2 endPos = t0.position;
+                        Vector2 dir = endPos - t0.rawPosition;
+                        if(Mathf.Abs(dir.magnitude)>1f)
+                        {
+                            text.text = dir.ToString();
+                        }
+                        else
+                        {
+                            text.text = "Stand";
+                        }
+                        Destroy(markTS.gameObject);
+                        break;
+                    }
+
                 //当手指因为某些原因出现问题的时候，多半是系统原因，取消对某个手指的追踪
                 case TouchPhase.Canceled:
-                    Destroy(markTS.gameObject);
-                    break;
+                    {
+                        Vector2 endPos = t0.position;
+                        Vector2 dir = endPos - t0.rawPosition;
+                        if (Mathf.Abs(dir.magnitude) > 1f)
+                        {
+                            text.text = dir.ToString();
+                        }
+                        else
+                        {
+                            text.text = "Stand";
+                        }
+                        Destroy(markTS.gameObject);
+                        break;
+                    }
                 default:
                     break;
             }

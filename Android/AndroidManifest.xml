@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hcs.AndroidStudy01.testlibrary01"
+    package="com.hcs.androidstudy01.mylibrarytest01"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -12,17 +12,17 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true" >
-        <activity android:name="com.example.administrator.testlibrary01.MainActivity" >
+        <activity android:name="com.hcs.androidstudy01.mylibrarytest01.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="UnityPlayer.UnityActivity"
-                android:value="true" />
         </activity>
+
+        <meta-data
+            android:name="unityplayer.UnityActivity"
+            android:value="true" />
     </application>
 
 </manifest>

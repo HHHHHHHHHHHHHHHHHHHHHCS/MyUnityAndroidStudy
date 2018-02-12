@@ -18,5 +18,10 @@ public class AndroidTest01 : MonoBehaviour
 
 	}
 
+    public void ChangeColor()
+    {
+        text.fontSize = 200;
+        text.color = Color.black;
+    }
 
 }

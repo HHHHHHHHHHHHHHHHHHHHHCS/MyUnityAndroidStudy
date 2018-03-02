@@ -15,4 +15,5 @@ public class AndroidTest04 : MonoBehaviour
             toast.CallStatic<AndroidJavaObject>("makeText", context, "Send From Unity", toast.GetStatic<int>("LENGTH_LONG")).Call("show");
         }));
     }
+
 }

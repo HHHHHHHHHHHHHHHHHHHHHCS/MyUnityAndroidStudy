@@ -6,29 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/AndroidTest05.unity
+    guid: 3c7d181441cbb924d9511a36edb26eb7
+  - enabled: 0
     path: Assets/Scenes/AndroidTest04.unity
     guid: 1c3e8fecc068ef04eb1cd4accb07bbed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AndroidTest03.unity
     guid: 5804394e2730b234a91fda20ad4c7f22
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AndroidTest02.unity
     guid: db1bbe04aeac02b44a71d426f9d3290a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AndroidTest01.unity
     guid: 080cf04679c6b9a4f83b85e34fed24cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TrailTest.unity
     guid: 3e37b9e7e57e7ae4a9d9ed1a66decefb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TouchTest.unity
     guid: cf6f42d415dbb1c4887a09465b711fe8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PhoneTest.unity
     guid: 36bc890990fe18d47a4235e3ea8d4127
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AdjustCameraTest.unity
     guid: c23988893d7d8ba49869a0d7fb6bb7c6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnchorTestUI.unity
     guid: 064329ad60950914794a53eb094e8d22
